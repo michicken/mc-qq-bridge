@@ -1,0 +1,7 @@
+{
+  "wsUrl": "ws://127.0.0.1:8777",
+  "container": "minecraft-server",
+  "groupId": "1079823701",
+  "heartbeatInterval": 25000,
+  "logLevel": "info"
+}

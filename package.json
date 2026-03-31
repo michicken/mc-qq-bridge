@@ -1,0 +1,39 @@
+{
+  "name": "mc-qq-bridge",
+  "version": "1.0.0",
+  "description": "Bidirectional real-time message bridge between Minecraft server chat and QQ group chat (OneBot v11)",
+  "main": "src/bridge.js",
+  "bin": {
+    "mc-qq-bridge": "./src/bridge.js"
+  },
+  "scripts": {
+    "start": "node src/bridge.js",
+    "dev": "node src/bridge.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "minecraft",
+    "qq",
+    "onebot",
+    "bridge",
+    "chat",
+    "rcon",
+    "websocket"
+  ],
+  "author": "Freedom Lobster AI",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mc-qq-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mc-qq-bridge/issues"
+  },
+  "homepage": "https://github.com/yourusername/mc-qq-bridge#readme"
+}

@@ -1,0 +1,19 @@
+[Unit]
+Description=Minecraft-QQ Bidirectional Bridge
+Documentation=https://github.com/yourusername/mc-qq-bridge
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/mc-qq-bridge
+ExecStart=/usr/bin/node /opt/mc-qq-bridge/src/bridge.js
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+EnvironmentFile=/etc/mc-qq-bridge/env.conf
+
+[Install]
+WantedBy=multi-user.target
